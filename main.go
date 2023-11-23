@@ -3,7 +3,10 @@ package main
 import (
 	"demo/branching"
 	"demo/functions"
+	"demo/generics"
 	"demo/loops"
+	"demo/types/methods"
+	"demo/types/structs"
 	"fmt"
 )
 
@@ -13,7 +16,22 @@ func main() {
 	// execute the tests from main package.
 	// loops_tests()
 	// branching_tests()
+	// generics_tests()
+	// structs_tests()
+	methods_tests()
 
+}
+
+func methods_tests() {
+	methods.Test_methods()
+}
+
+func structs_tests() {
+	structs.Test_structs()
+}
+func generics_tests() {
+	generics.Test_before_generics()
+	generics.Test_after_generics()
 }
 
 func functions_tests() {
